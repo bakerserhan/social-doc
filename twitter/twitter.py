@@ -36,6 +36,9 @@ for i in range(0, len(user_timeline)):
             'text'] + ' - ' + str(sentiment_score) + '\n'
     else:
         break
-avg_sentiment_score = total_sentiment_score / tweet_count
-print "Today's tweet count for " + username + ": " + str(tweet_count)
-print('\nAvg Sentiment Score : %.2f' % avg_sentiment_score)
+if tweet_count > 0:
+    avg_sentiment_score = total_sentiment_score / tweet_count
+    print "Today's tweet count for " + username + ": " + str(tweet_count)
+    print('\nAvg Sentiment Score : %.2f' % avg_sentiment_score)
+else:
+    print 'No tweets for ' + username + ' @ '
