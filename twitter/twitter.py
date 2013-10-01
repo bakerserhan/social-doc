@@ -41,4 +41,4 @@ if tweet_count > 0:
     print "Today's tweet count for " + username + ": " + str(tweet_count)
     print('\nAvg Sentiment Score : %.2f' % avg_sentiment_score)
 else:
-    print 'No tweets for ' + username + ' @ '
+    print 'No tweets for ' + username + ' @ ' + date_str
